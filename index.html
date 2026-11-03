@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f1e7">
+<meta name="description" content="中医体质自测，帮助了解身体感受与隐藏胖倾向。">
+<title>测测你的隐藏胖体质 · 轻养</title>
+<style>
+:root{color-scheme:light;--paper:#f5f1e7;--paper2:#ece7d9;--ink:#283b32;--muted:#758078;--green:#637d69;--green-dark:#46604d;--green-pale:#e5ecdf;--line:#ded9ca;--white:#fffdf8;--rose:#b76768;--gold:#ab9061;--shadow:0 18px 48px rgba(54,67,54,.09);font-family:"Songti SC","STSong","SimSun","Times New Roman",serif}*{box-sizing:border-box}body{margin:0;min-width:320px;min-height:100vh;color:var(--ink);background:radial-gradient(ellipse at 14% 8%,rgba(255,255,255,.68),transparent 33rem),linear-gradient(135deg,rgba(229,236,223,.42),transparent 48%),var(--paper)}button,input{font:inherit}button{touch-action:manipulation}.page{width:min(100% - 30px,760px);margin:auto;padding:20px 0 26px}.topline{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:13px;letter-spacing:.12em}.seal{width:34px;height:34px;display:grid;place-items:center;border:1px solid #a56e58;border-radius:50%;color:#a56e58}.hero{text-align:center;padding:clamp(28px,7vw,58px) 8px 30px}.eyebrow{margin:0 0 12px;color:var(--green);font-size:13px;letter-spacing:.22em}.hero h1{margin:0;font-size:clamp(31px,8vw,48px);font-weight:500;letter-spacing:.1em}.subtitle{margin:12px 0 0;color:var(--muted);font-size:clamp(15px,4vw,18px);letter-spacing:.06em}.home-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 auto 19px}.type-card{min-height:96px;padding:11px 10px;border:1px solid rgba(190,187,169,.65);border-radius:15px;background:rgba(255,253,248,.9);box-shadow:0 8px 24px rgba(54,67,54,.05);text-align:center}.type-card:before{display:block;width:30px;height:2px;margin:0 auto 8px;border-radius:3px;background:var(--accent,var(--green));content:""}.type-card:nth-child(2){--accent:#a86d6d}.type-card:nth-child(3){--accent:#9e8759}.type-card:nth-child(4){--accent:#7c9272}.type-card h2{margin:0;font-size:19px;font-weight:500}.type-card p{margin:6px 0 0;color:var(--muted);font-size:11px;line-height:1.45;white-space:pre-line}.center{text-align:center}.home-note{margin:0 0 12px;color:var(--muted);font-size:clamp(15px,4vw,18px)!important;letter-spacing:.06em}.footer #disclaimer p{margin:0 0 4px}.secondary:disabled{opacity:.45;cursor:not-allowed}.primary,.secondary,.unlock{min-height:50px;border-radius:999px;cursor:pointer;transition:transform .16s,background .16s,box-shadow .16s}.primary{min-width:190px;padding:0 30px;border:0;background:var(--green);color:var(--white);box-shadow:0 7px 18px rgba(70,96,77,.2);font-size:17px}.primary:hover,.unlock:hover{background:var(--green-dark);transform:translateY(-1px)}.fineprint,.footer{color:var(--muted);font-size:12px;line-height:1.8}.card{position:relative;overflow:hidden;padding:clamp(20px,5vw,34px);border:1px solid rgba(190,187,169,.65);border-radius:18px;background:rgba(255,253,248,.9);box-shadow:var(--shadow)}.card:before{position:absolute;z-index:0;top:0;right:0;width:110px;height:110px;border-radius:0 0 0 100%;background:linear-gradient(135deg,rgba(229,236,223,.48),transparent);content:"";pointer-events:none}.card>*{position:relative;z-index:1}.view-title{margin:0 0 6px;font-size:25px;font-weight:500}.view-subtitle{margin:0 0 22px;color:var(--muted);font-size:14px;line-height:1.7}.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 13px}.field{min-width:0}.field.full{grid-column:1/-1}.field label{display:block;margin:0 0 7px;font-size:14px}.unit{margin-left:4px;color:var(--muted);font-size:12px}.input-wrap{position:relative}.field input{width:100%;height:48px;padding:0 13px;border:1px solid var(--line);border-radius:10px;color:var(--ink);background:#fffefa;font-size:16px;outline:none}.field input:focus{border-color:#8ca18a;box-shadow:0 0 0 3px rgba(140,161,138,.15)}.field input[readonly]{color:var(--green-dark);background:#f1f3ec}.help{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.5}.tip{margin:6px 0 0;color:#999;font-size:12px;line-height:1.55;text-align:left}.form-actions{display:flex;justify-content:space-between;gap:12px;margin-top:22px}.secondary{min-width:110px;padding:0 20px;border:1px solid var(--line);color:var(--green-dark);background:transparent}.secondary:hover{background:#f3f2e9}.primary:disabled{background:#c8cec3;box-shadow:none;cursor:not-allowed}.quiz-head{display:flex;justify-content:space-between;gap:12px;margin-bottom:10px;color:var(--muted);font-size:13px}.progress{height:5px;margin-bottom:22px;overflow:hidden;border-radius:99px;background:#ece9df}.progress>span{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,#849b7c,#57745e);transition:width .25s}.question-text{position:relative;z-index:2;min-height:2.7em;margin:0 0 17px;font-size:clamp(20px,5vw,26px);font-weight:500;line-height:1.55}.choices{display:grid;gap:9px}.choice{display:flex;min-height:52px;align-items:center;gap:12px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;color:var(--ink);background:rgba(255,255,255,.58);cursor:pointer;text-align:left;transition:border-color .16s,background .16s,transform .16s}.choice:hover{border-color:#9caf98;transform:translateY(-1px)}.choice[aria-checked=true]{border-color:var(--green);background:var(--green-pale);box-shadow:inset 0 0 0 1px var(--green);animation:pulse .62s ease-out}.choice-num{display:grid;width:27px;height:27px;flex:0 0 27px;place-items:center;border-radius:50%;background:#edf1e8;color:var(--green-dark);font:13px system-ui}.choice-label{font-size:15px}.nav{display:flex;justify-content:space-between;gap:12px;margin-top:20px}.nav .primary{min-width:140px;font-size:15px}.result-hero{text-align:center;padding:6px 0 20px}.result-hero h2{margin:0;font-size:clamp(29px,7vw,40px);font-weight:500;letter-spacing:.06em}.result-hero p{margin:10px 0 0;color:var(--muted);font-size:14px}.module{margin-top:15px;padding:20px;border:1px solid rgba(190,187,169,.6);border-radius:15px;background:rgba(255,253,248,.88)}.module h3{margin:0 0 12px;font-size:18px;font-weight:500}.reason{color:var(--green-dark);font-size:15px;line-height:1.8}.chart-legend{display:flex;gap:15px;margin-bottom:8px;color:var(--muted);font-size:12px}.legend-dot{display:inline-block;width:9px;height:9px;margin-right:5px;border-radius:50%;background:#a9c4a2}.legend-dot.high{background:#b45e58}.chart-wrap{position:relative;--plot-height:170px}.chart-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding-right:66px}.threshold-label{position:absolute;right:0;top:calc(var(--plot-height)*.6);z-index:5;padding:2px 3px;background:var(--white);color:#a64d49;font-size:11px;line-height:1.2;white-space:nowrap}.chart-col{min-width:0;text-align:center}.plot{position:relative;height:170px;margin:0 0 8px}.bars{position:absolute;inset:0;display:flex;align-items:stretch;justify-content:center}.bar-track{position:relative;width:min(64%,50px);height:100%;border-radius:7px 7px 2px 2px;background:#edf3e9}.bar-fill{position:absolute;right:0;bottom:0;left:0;min-height:2px;border-radius:7px 7px 2px 2px;background:#a9c4a2;transition:height .55s ease}.bar-fill.high{background:#b45e58}.bar-value{position:absolute;right:50%;bottom:calc(var(--score)*1% + 5px);transform:translateX(50%);color:var(--ink);font:11px system-ui}.threshold{position:absolute;z-index:4;right:0;bottom:40%;left:0;border-top:2px dashed #b45e58}.threshold span{position:absolute;right:0;top:-17px;padding:1px 4px;background:var(--white);color:#a64d49;font-size:10px}.chart-name{display:block;min-height:1.5em;font-size:12px;line-height:1.4}.chart-note{margin:14px 0 0;text-align:center;color:#999;font-size:12px;line-height:1.6}.subtle{margin-top:9px!important;color:var(--muted);font-size:11px}.feedback-list{display:grid;gap:9px}.feedback-line{margin:0;padding:10px 12px;border-radius:10px;background:#f1f4ed;color:#647465;font-size:13px;line-height:1.7}.eval-title{margin:0 0 8px;color:var(--green-dark);font-size:19px}.eval-copy{margin:0;color:#56685a;font-size:14px;line-height:1.8}.eval-advice{margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}.plan-grid{display:flex;flex-direction:column;gap:10px}.plan-panel{width:100%;flex:none}.plan-panel{padding:14px;border-radius:12px;background:#f2f4ee}.plan-panel h4{margin:0 0 7px;color:var(--green-dark);font-size:15px;font-weight:500}.plan-panel p{margin:0 0 8px;color:#56645a;font-size:13px;line-height:1.75;white-space:normal}.plan-panel p:last-child{margin-bottom:0}.secondary-types{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}.tag{padding:5px 10px;border:1px solid #d5dfd0;border-radius:99px;color:var(--green-dark);background:#f2f5ef;font-size:12px}.unlock{min-width:220px;padding:0 25px;border:0;background:var(--green);color:white;font-size:16px;box-shadow:0 7px 18px rgba(70,96,77,.18)}.footer{padding:20px 8px 0;text-align:center}.modal-bg{position:fixed;z-index:5;inset:0;display:grid;place-items:center;padding:20px;background:rgba(31,43,35,.45)}.modal{position:relative;width:min(100%,420px);padding:32px 25px 28px;border:1px solid rgba(255,255,255,.7);border-radius:18px;background:var(--white);box-shadow:0 24px 70px rgba(24,37,27,.24);text-align:center}.modal h2{margin:0 0 12px;color:var(--green-dark);font-size:21px;font-weight:500}.modal p{margin:0;color:#657168;font-size:15px;line-height:1.9}.wechat{display:inline-block;margin-top:8px;padding:4px 12px;border-radius:8px;background:var(--green-pale);color:var(--green-dark);font-family:system-ui;font-weight:600}.modal-close{position:absolute;top:8px;right:10px;width:38px;height:38px;border:0;border-radius:50%;background:transparent;color:var(--muted);font-size:24px;cursor:pointer}[hidden]{display:none!important}@keyframes pulse{0%,100%{transform:scale(1);box-shadow:inset 0 0 0 1px var(--green)}36%{transform:scale(1.02);box-shadow:0 0 0 4px rgba(208,185,122,.2),0 0 19px 3px rgba(103,143,102,.3),inset 0 0 0 1px var(--green)}}button:focus-visible,input:focus-visible{outline:3px solid #b8c8a8;outline-offset:2px}@media(max-width:560px){.page{width:min(100% - 22px,760px);padding-top:12px}.hero{padding:35px 5px 23px}.type-card{min-height:106px;padding:15px 10px}.type-card h2{font-size:19px}.type-card p{font-size:11px}.card{padding:18px 15px}.field-grid{grid-template-columns:1fr;gap:13px}.field.full{grid-column:auto}.view-title{font-size:22px}.question-text{min-height:0;margin-bottom:13px;font-size:20px;line-height:1.45}.choices{gap:7px}.choice{min-height:48px;padding:8px 11px}.choice-label{font-size:14px}.nav{margin-top:15px}.nav .primary,.nav .secondary{min-height:48px;padding:0 15px}.module{padding:16px 14px}.plot{height:150px}.chart-wrap{--plot-height:150px}.plan-grid{flex-direction:column}.unlock{width:100%}.form-actions{position:sticky;bottom:8px;padding:8px 0;background:linear-gradient(transparent,var(--white) 30%);z-index:3}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+</style>
+<style>
+#result-view .module h3{color:#587d60;font-weight:700;text-align:left}
+#reason-module{margin-top:-10px}
+#result-view .root-preview-row{display:block;margin:10px 0 0;text-align:center}
+#result-view #result-subheading{margin:0;font-size:14px;line-height:1.6!important;text-align:center}
+.detail-link{display:inline-block;vertical-align:baseline;margin-left:5px;padding:0 2px;border:0;background:transparent;color:#78877a;font:inherit;font-size:12px;line-height:1.4;text-decoration:underline;text-underline-offset:2px;white-space:nowrap;cursor:pointer}
+#secondary-types{display:block;max-width:100%;margin:4px auto 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px;line-height:1.6;text-align:center}
+.secondary-label{color:#587d60;font-weight:700}.secondary-names{color:var(--muted);font-weight:400}
+.detail-link:focus-visible,.chart-note-trigger:focus-visible{outline:2px solid #819b78;outline-offset:2px}
+#result-subheading,.reason{line-height:2!important}
+.cause-item{margin:0 0 11px!important;color:var(--green-dark);font-size:14px;line-height:1.9}
+.cause-item:last-child{margin-bottom:0!important}
+.cause-number{margin-right:5px;color:#728c68;font-weight:700}
+.cause-summary{margin-right:6px;color:#9a8050;font-weight:700;white-space:nowrap}
+#result-metrics{margin:0 0 12px;color:#587d60;font-size:18px;font-weight:700;line-height:1.55;text-align:left}
+.chart-note-toggle{display:block;width:100%;margin:13px 0 0;padding:2px 0;border:0;background:transparent;color:#999;font:inherit;font-size:12px;line-height:1.7;text-align:center;cursor:pointer}
+.chart-note-toggle .detail-link{font-size:11px;color:#78877a}
+.info-modal-copy{max-height:55vh;overflow:auto;color:#56685a;font-size:14px;line-height:2;text-align:left;white-space:normal}
+@media(max-width:480px){.module{padding:17px}.chart-note-toggle{font-size:11px}.chart-note-toggle .detail-link{font-size:10px}#secondary-types{font-size:14px}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="topline"><span>轻养 · 体质自测</span><span class="seal" aria-hidden="true">养</span></header>
+<main>
+<section id="home-view">
+  <div class="hero"><p class="eyebrow">身心有度 · 四时有常</p><h1>测测你的隐藏胖体质</h1><p class="subtitle">中医视角 · 2分钟解锁个人身材密码</p></div>
+  <div id="home-types" class="home-grid" aria-label="四种隐藏胖体质"></div>
+  <div class="center"><p class="fineprint home-note">系统将综合评估多种复合体质</p><button id="start-button" class="primary" type="button">立即测试</button><p class="fineprint">28 道自测题 · 根据近一年实际感受作答</p></div>
+</section>
+<section id="basic-view" class="card" hidden>
+  <h2 class="view-title" id="basic-title"></h2><p class="view-subtitle" id="basic-subtitle"></p>
+  <form id="basic-form" novalidate><div id="field-grid" class="field-grid"></div>
+    <div class="form-actions"><button class="secondary" id="basic-back" type="button">返回首页</button><button class="primary" id="basic-next" type="submit" disabled>开始答题</button></div>
+  </form>
+</section>
+<section id="quiz-view" class="card" hidden aria-labelledby="question-text">
+  <div class="quiz-head"><span id="question-count"></span><span>请按近一年感受作答</span></div>
+  <div class="progress" role="progressbar" aria-label="答题进度" aria-valuemin="0" aria-valuemax="28" aria-valuenow="0"><span id="progress-fill"></span></div>
+  <h2 id="question-text" class="question-text" tabindex="-1"></h2><div id="answer-options" class="choices" role="radiogroup" aria-labelledby="question-text"></div>
+  <div class="nav"><button class="secondary" id="prev-question" type="button">上一题</button><button class="primary" id="next-question" type="button" disabled>下一题</button></div>
+</section>
+<section id="result-view" hidden>
+  <div class="card">
+    <div class="result-hero"><p class="eyebrow">你的体质画像</p><h2 id="result-heading"></h2><p id="result-subheading" class="root-preview-row"></p><div id="secondary-types" class="secondary-types"></div></div>
+    <section id="reason-module" class="module" hidden><h3>可能的发胖原因</h3><p id="obesity-causes" class="reason"></p></section>
+    <section class="module"><h3>体质转化分</h3><div class="chart-legend"><span><i class="legend-dot"></i>40 分及以下</span><span><i class="legend-dot high"></i>超过 40 分</span></div><div class="chart-wrap"><div id="score-chart" class="chart-grid"></div><span class="threshold-label">40分判定线</span></div><button id="chart-note-trigger" class="chart-note-toggle" type="button" aria-haspopup="dialog">判定规则：需结合 40 分红线及平和质要求 <span class="detail-link">[查看详情]</span></button></section>
+    <section class="module"><h3 id="result-metrics"></h3><div id="result-feedback" class="feedback-list"></div></section>
+    <section id="bodyfat-module" class="module" hidden><h3>体脂率综合评估</h3><p id="bodyfat-value" class="eval-copy"></p><div id="bodyfat-evaluation" hidden><h4 id="evaluation-title" class="eval-title"></h4><p id="evaluation-copy" class="eval-copy"></p><p id="evaluation-advice" class="eval-copy eval-advice"></p></div><p id="bodyfat-none" class="eval-copy" hidden></p></section>
+    <section class="module"><h3>结构化调理方案</h3><p id="plan-principle" class="view-subtitle"></p><div id="plan-grid" class="plan-grid"></div></section>
+    <div class="center" style="padding-top:20px"><button id="unlock-button" class="unlock" type="button">🔓 解锁专属减重方案</button></div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div id="disclaimer"></div><p>本自测仅作体质倾向参考，不替代医疗诊断；如有不适，请咨询正规医疗机构。</p></footer>
+</div>
+<div id="wechat-modal" class="modal-bg" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button id="modal-close" class="modal-close" type="button" aria-label="关闭">×</button><h2 id="modal-title">领取专属报告</h2><p>请截图，添加客服微信：<br><span class="wechat">TCM_Doctor01</span><br>领取完整调理建议</p></section></div>
+<div id="root-modal" class="modal-bg" hidden><section class="modal info-modal" role="dialog" aria-modal="true" aria-labelledby="root-modal-title"><button id="root-modal-close" class="modal-close" type="button" aria-label="关闭">×</button><h2 id="root-modal-title">完整病机详情</h2><p id="root-modal-copy" class="info-modal-copy"></p></section></div>
+<div id="rule-modal" class="modal-bg" hidden><section class="modal info-modal" role="dialog" aria-modal="true" aria-labelledby="rule-modal-title"><button id="rule-modal-close" class="modal-close" type="button" aria-label="关闭">×</button><h2 id="rule-modal-title">体质判定规则</h2><p class="info-modal-copy">判定结果不仅看最高分。若某偏颇体质转化分达到或超过 40 分（红线），系统将优先提示该体质倾向。平和质只有在得分最高且其他偏颇体质均低于 40 分时，才判定为平和质。</p></section></div>
+<script type="application/json" id="quiz-data">{
+  "name": "中医体质自测",
+  "version": "2.3.1",
+  "target": "18-35岁女性",
+  "instrument": "基于《中医体质量表》(CCMQ) 条目框架与 GB/T 46939-2025《中医体质分类与判定》条目改写，v2.0 增补饮食偏好与心理状态维度",
+  "instruction": "请根据最近一年的实际情况选择最接近的答案，没有对错之分。",
+  "options": [
+    {
+      "value": 1,
+      "label": "没有"
+    },
+    {
+      "value": 2,
+      "label": "很少"
+    },
+    {
+      "value": 3,
+      "label": "有时"
+    },
+    {
+      "value": 4,
+      "label": "经常"
+    },
+    {
+      "value": 5,
+      "label": "总是"
+    }
+  ],
+  "basicInfoModule": {
+    "id": "basic_info",
+    "title": "先认识一下你的身体",
+    "subtitle": "这五项会作为你体质报告的坐标轴，填完自动算出你的 BMI~",
+    "layout": "single_screen_form",
+    "layoutNote": "五项必须在同一界面一次性展示，渲染为一张表单卡片，不做成逐题翻页",
+    "isScored": false,
+    "submitControl": "auto",
+    "submitControlNote": "身高与体重两者都填写后自动计算并刷新 BMI 字段；也可手动修改",
+    "fields": [
+      {
+        "key": "age",
+        "label": "年龄",
+        "unit": "岁",
+        "inputType": "number",
+        "required": true,
+        "min": 10,
+        "max": 80,
+        "step": 1,
+        "placeholder": "例如 26",
+        "helpText": "年龄是评估基础代谢的重要参考~"
+      },
+      {
+        "key": "height",
+        "label": "身高",
+        "unit": "cm",
+        "inputType": "number",
+        "required": true,
+        "min": 120,
+        "max": 200,
+        "step": 0.5,
+        "placeholder": "例如 162",
+        "helpText": "穿平底鞋量就好，要量得准准的哦"
+      },
+      {
+        "key": "weight",
+        "label": "体重",
+        "unit": "kg",
+        "inputType": "number",
+        "required": true,
+        "min": 25,
+        "max": 200,
+        "step": 0.1,
+        "placeholder": "例如 56.5",
+        "helpText": "早上空腹、上完厕所后称最准"
+      },
+      {
+        "key": "bmi",
+        "label": "BMI 体质指数",
+        "unit": "kg/m²",
+        "inputType": "computed",
+        "computed": true,
+        "required": false,
+        "readonly": true,
+        "formula": "bmi = weight / ((height / 100) ** 2)",
+        "formulaNote": "BMI = 体重(kg) ÷ 身高(m)²，前端根据 height 与 weight 实时计算并回填",
+        "dependencies": [
+          "height",
+          "weight"
+        ],
+        "precision": 1,
+        "displayMode": "auto_refresh",
+        "helpText": "由身高体重自动算出，不用你填～",
+        "reference": "中国成人标准：偏瘦 <18.5，正常 18.5-23.9，过重 24.0-27.9，肥胖 ≥28.0"
+      },
+      {
+        "key": "bodyFatRate",
+        "label": "体脂率",
+        "unit": "%",
+        "inputType": "number",
+        "required": false,
+        "optional": true,
+        "min": 5,
+        "max": 70,
+        "step": 0.1,
+        "placeholder": "例如 28.6（选填）",
+        "helpText": "系统已自动估算，如有手环/其他电子设备的准确数据，可即刻修改覆盖",
+        "reference": "女性体脂率参考：20%-25% 正常，25%-30% 偏高，≥30% 肥胖"
+      }
+    ],
+    "bmiRanges": [
+      {
+        "key": "underweight",
+        "label": "偏瘦",
+        "min": 0,
+        "max": 18.5,
+        "exclusiveMax": true,
+        "rangeText": "BMI < 18.5"
+      },
+      {
+        "key": "normal",
+        "label": "正常",
+        "min": 18.5,
+        "max": 24,
+        "exclusiveMax": true,
+        "rangeText": "18.5 ≤ BMI < 24"
+      },
+      {
+        "key": "overweight",
+        "label": "过重",
+        "min": 24,
+        "max": 28,
+        "exclusiveMax": true,
+        "rangeText": "24 ≤ BMI < 28"
+      },
+      {
+        "key": "mild_obese",
+        "label": "轻度肥胖",
+        "min": 28,
+        "max": 32,
+        "exclusiveMax": true,
+        "rangeText": "28 ≤ BMI < 32"
+      },
+      {
+        "key": "moderate_obese",
+        "label": "中度肥胖",
+        "min": 32,
+        "max": 35,
+        "exclusiveMax": true,
+        "rangeText": "32 ≤ BMI < 35"
+      },
+      {
+        "key": "severe_obese",
+        "label": "重度肥胖",
+        "min": 35,
+        "max": 100,
+        "exclusiveMax": false,
+        "rangeText": "BMI ≥ 35"
+      }
+    ],
+    "bmiRangeLookup": "根据 bmi 值在 bmiRanges 中匹配第一个 min ≤ bmi < max 的区间；命中后取 bmiTips[rangeKey] 随机一句展示",
+    "bodyFatThresholds": {
+      "femaleNormal": {
+        "min": 20,
+        "max": 25,
+        "label": "正常"
+      },
+      "femaleHigh": {
+        "min": 25,
+        "max": 30,
+        "label": "偏高"
+      },
+      "femaleObese": {
+        "min": 30,
+        "max": 70,
+        "label": "肥胖"
+      }
+    },
+    "underageRule": {
+      "condition": "age < 18",
+      "action": "从 underageTips 数组中随机抽取 1 句插入结果页顶部提示",
+      "note": "未满 18 岁者结果仅作体质倾向性参考，膳食与运动建议需监护人陪同并遵医嘱"
+    },
+    "hiddenFatRule": {
+      "condition": "(bmi 在 normal 或 underweight 区间) 且 bodyFatRate ≥ 25",
+      "action": "使用 comprehensiveEvaluation.hiddenFat 文案"
+    },
+    "healthyFullRule": {
+      "condition": "(bmi 在 overweight 或 mild_obese 区间) 且 bodyFatRate 已填写且 < 25",
+      "action": "使用 comprehensiveEvaluation.healthyFull 文案"
+    }
+  },
+  "scoring": {
+    "optionScore": "用户所选项的数值（1-5）",
+    "reverseRule": "若 reverse=true，则该题选项分取 6-选项值（1→5, 2→4, 3→3, 4→2, 5→1）后再计分",
+    "weightRule": "该题对某体质的得分 = 选项分 × 该题在该体质的 scores 权重；权重为 0 或不含该体质 id 表示该题不计入该体质",
+    "rawFormula": "体质维度原始分 = Σ(该维度下每题 选项分 × 该题在该维度的权重)",
+    "minFormula": "体质维度最低可能分 = Σ(该维度下每题 1 × 该题在该维度的权重)",
+    "maxFormula": "体质维度最高可能分 = Σ(该维度下每题 5 × 该题在该维度的权重)",
+    "transformedFormula": "转化分 = (原始分 - 最低可能分) / (最高可能分 - 最低可能分) × 100，保留 1 位小数，取值 0-100",
+    "note": "各体质维度独立计算转化分，不同维度题目数不同不影响可比性（与国标极差标准化法一致）",
+    "questionCategories": {
+      "body": "躯体与代谢表现题",
+      "diet": "饮食习惯题",
+      "psych": "心理状态题"
+    }
+  },
+  "decisionRules": {
+    "primary": "取转化分最高的偏颇体质作为主判体质",
+    "secondary": "转化分次高且达到 30 分者，作为兼夹体质显示",
+    "pingheCondition": "平和质转化分 ≥ 60 且其余 5 种偏颇体质转化分均 < 40，判定为平和质",
+    "pinghePartial": "平和质转化分 ≥ 60 但存在偏颇体质转化分 ≥ 40，判定为『基本平和，兼有偏颇倾向』",
+    "levels": {
+      "strong": "转化分 ≥ 40，判定『是』",
+      "moderate": "转化分 30-39，判定『倾向是』",
+      "weak": "转化分 < 30，判定『否』"
+    },
+    "constitutionIndexFormula": "体质指数 = 最高偏颇体质转化分 - 平和质转化分",
+    "reTest": "体重下降 5%-10% 后建议重新测评并调整膳食方案（依广东省肥胖专病联盟共识第 7 条）"
+  },
+  "constitutions": [
+    {
+      "id": "phlegm",
+      "name": "痰湿质",
+      "desc": "痰湿凝聚，以形体肥胖、腹部肥满、口黏苔腻等为主要特征。",
+      "evidence": "GB/T 46939-2025 4.5；朱燕波 18805 例 Logistic 回归；韩燕 761 例横断面（OR=3.35, P<0.001）；张笑梅 983 例典型相关；陈丽名 115 例女性人体成分",
+      "tags": [
+        "腹型肥胖",
+        "水肿",
+        "代谢缓慢",
+        "腹部松软",
+        "口黏身重"
+      ],
+      "adviceTag": "phlegm_diet",
+      "typical_features": "面部油脂多，多汗且黏，胸闷痰多，口黏腻或甜，舌胖大苔腻，脉滑。",
+      "obesity_causes": "过食肥甘甜黏、劳倦伤脾，致中气虚损、脾运失职，湿聚生痰；痰湿质超重风险增93%、肥胖增297%。",
+      "daily_advice": "多食薏苡仁、茯苓、陈皮、冬瓜等健脾化湿之品，忌甜腻油炸、戒含糖饮料；每餐七分饱，坚持有氧运动。",
+      "exercise_taboo": "忌久坐少动与暴饮暴食，忌汗出不彻、骤然爆发式发力；痰湿易夹血瘀，宜渐进有氧以化湿。"
+    },
+    {
+      "id": "qixu",
+      "name": "气虚质",
+      "desc": "元气不足，以疲乏、气短、自汗等为主要特征。",
+      "evidence": "GB/T 46939-2025 4.2（易患肥胖）；俞若熙《中医干预肥胖人群的3个问题》；杨露 422 例；宗玉涵 1473 例队列（痰湿兼夹气虚质占 20.95%）",
+      "tags": [
+        "代谢缓慢",
+        "疲乏懒言",
+        "动则汗出",
+        "肌肉松软",
+        "易感冒"
+      ],
+      "adviceTag": "qixu_diet",
+      "typical_features": "语音低弱，气短懒言，容易疲乏，精神不振，易出汗，舌边有齿痕。",
+      "obesity_causes": "饮食失调、劳倦伤脾，致中气虚损、脾运失职，水谷不化精微而聚湿生痰；病后康复缓慢。",
+      "daily_advice": "宜山药、小米、大枣、莲子、黄芪等健脾益气之品，忌生冷与长期节食；宜柔缓运动多眠，睡眠7-8小时。",
+      "exercise_taboo": "忌长时间高强度大汗耗气，忌过度思虑与熬夜；宜八段锦、太极、散步等柔缓之功，循序渐进。"
+    },
+    {
+      "id": "dampheat",
+      "name": "湿热质",
+      "desc": "湿热内蕴，以面垢油光、口苦、苔黄腻等为主要特征。",
+      "evidence": "GB/T 46939-2025 4.6（易患痤疮）；张笑梅 983 例（WC/WHtR 与湿热质正相关最强）；孟令杰 1267 例肥胖表型；广东省针灸学会肥胖专病联盟共识 4.4.3",
+      "tags": [
+        "痤疮",
+        "面油",
+        "口苦",
+        "带下量多",
+        "代谢异常"
+      ],
+      "adviceTag": "dampheat_diet",
+      "typical_features": "面垢油光易生痤疮，口苦口干，身重困倦，大便黏滞不爽，苔黄腻。",
+      "obesity_causes": "嗜食辛辣肥甘、久居湿热之地，湿热内蕴难化；湿热质与腰围、BMI所示肥胖呈正相关，尿酸血脂易升高。",
+      "daily_advice": "宜绿豆、冬瓜、苦瓜、芹菜等清热祛湿之品，忌温热辛辣、忌酒、忌油炸；保证睡眠以清肝火。",
+      "exercise_taboo": "忌高温暴汗、大汗淋漓以免伤津助热，忌久居湿热环境；宜早晚凉爽时缓中有氧，汗出微即可。"
+    },
+    {
+      "id": "yangxu",
+      "name": "阳虚质",
+      "desc": "阳气不足，以畏寒怕冷、手足不温等虚寒表现为主要特征。",
+      "evidence": "GB/T 46939-2025 4.3（易患痰饮、肿胀）；陈丽名 115 例女性中阳虚质分布最多（29.6%）；广东省共识 4.4.4（阳虚膳食模式适用于产后、围绝经期肥胖人群）；韩燕 761 例",
+      "tags": [
+        "畏寒肢冷",
+        "晨起浮肿",
+        "代谢缓慢",
+        "喜热饮",
+        "经期水肿"
+      ],
+      "adviceTag": "yangxu_diet",
+      "typical_features": "畏冷手足不温，喜热饮食，精神不振，舌淡胖嫩，脉沉迟。",
+      "obesity_causes": "禀赋不足或久病伤阳，脾胃失于温运，饮食不化精微而聚湿生痰；产后与围绝经期为高发阶段。",
+      "daily_advice": "宜生姜、韭菜、核桃、羊肉、栗子等温补之品，忌生冷冰饮、忌苦寒；注意腰腹保暖，可温水泡脚。",
+      "exercise_taboo": "忌大汗伤阳与冷水游泳，忌熬夜耗阳；宜温和运动如八段锦、快走，以微微汗出为度。"
+    },
+    {
+      "id": "qiyu",
+      "name": "气郁质",
+      "desc": "气机郁滞，以神情抑郁、忧虑脆弱等气郁表现为主要特征。",
+      "evidence": "GB/T 46939-2025 4.8；俞若熙指出气郁是肥胖形成中的情志因素；广东省共识 4.4.5（气郁膳食模式，肥胖型 PCOS 气郁质发生率 17.3% > 非肥胖型 9.1%）；王琦『肥人四多：多气虚、多湿、多痰、多瘀』",
+      "tags": [
+        "焦虑紧张",
+        "爱叹气",
+        "经前情绪波动",
+        "压力性进食",
+        "胸胁胀满"
+      ],
+      "adviceTag": "qiyu_diet",
+      "typical_features": "常感闷闷不乐，情绪低沉，容易紧张焦虑，胸胁胀满，喜欢叹气。",
+      "obesity_causes": "长期精神压力大、情志不畅、思虑过度，导致肝失疏泄，气机郁滞而代谢渐缓。",
+      "daily_advice": "宜多参加社交活动，听轻音乐，睡前泡脚，保持心情舒畅；23点前入睡。",
+      "exercise_taboo": "宜多参加跑步、打球等能发泄情绪的户外群体运动，忌独自闷在家里。"
+    },
+    {
+      "id": "pinghe",
+      "name": "平和质",
+      "desc": "阴阳气血调和，以体态适中、面色红润、精力充沛等为主要特征。",
+      "evidence": "GB/T 46939-2025 4.1、表 A.1；《中医体质量表》使用规范（朱燕波 2022）",
+      "tags": [
+        "精力充沛",
+        "体型匀称",
+        "睡眠良好",
+        "情绪平稳"
+      ],
+      "adviceTag": "pinghe_diet",
+      "typical_features": "面色润泽，精力充沛，耐受寒热，胃纳佳，睡眠良好，二便正常，舌淡红。",
+      "obesity_causes": "无体质性发胖倾向；若体形偏胖，多由饮食过量、运动不足等生活方式因素所致。",
+      "daily_advice": "五味不偏、阴阳平衡，谷类为主、多食蔬菜薯类，少油少盐；规律作息与运动，防止由平和转偏颇。",
+      "exercise_taboo": "无体质禁忌；忌无节制节食与长期熬夜，宜规律有氧加力量训练，保持代谢稳定。"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "text": "你平时精力充沛，做事有劲吗？",
+      "dimension": "pinghe",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "pinghe": 1
+      }
+    },
+    {
+      "id": 2,
+      "text": "你的腹部松软肥满吗？",
+      "dimension": "phlegm",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "phlegm": 1
+      }
+    },
+    {
+      "id": 3,
+      "text": "你特别爱吃甜食吗？（蛋糕、奶茶、巧克力、糖果……甜一点就心情变好）",
+      "dimension": "phlegm",
+      "category": "diet",
+      "reverse": false,
+      "scores": {
+        "phlegm": 1,
+        "dampheat": 0.5
+      }
+    },
+    {
+      "id": 4,
+      "text": "你比别人更怕冷，手脚常年捂不热吗？",
+      "dimension": "yangxu",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "yangxu": 1
+      }
+    },
+    {
+      "id": 5,
+      "text": "你说话时声音低弱、不爱多说话，容易气短懒言吗？",
+      "dimension": "qixu",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "qixu": 1
+      }
+    },
+    {
+      "id": 6,
+      "text": "你容易紧张、焦虑，情绪像一根绷着的弦吗？",
+      "dimension": "qiyu",
+      "category": "psych",
+      "reverse": false,
+      "scores": {
+        "qiyu": 1
+      }
+    },
+    {
+      "id": 7,
+      "text": "你面部或鼻部油腻发亮，容易长痘（痤疮、粉刺、闭口）吗？",
+      "dimension": "dampheat",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "dampheat": 1,
+        "phlegm": 0.5
+      }
+    },
+    {
+      "id": 8,
+      "text": "你容易疲乏吗？（总觉得累、不想动、干什么都提不起劲）",
+      "dimension": "pinghe",
+      "category": "body",
+      "reverse": true,
+      "scores": {
+        "pinghe": 1
+      }
+    },
+    {
+      "id": 9,
+      "text": "早上起床时，你的脸或眼皮容易浮肿吗？",
+      "dimension": "phlegm",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "phlegm": 1,
+        "yangxu": 0.5
+      }
+    },
+    {
+      "id": 10,
+      "text": "你爱喝冷饮、吃生冷吗？（冰奶茶、冰美式、冰淇淋、冰西瓜、生鱼片、刺身......）",
+      "dimension": "yangxu",
+      "category": "diet",
+      "reverse": false,
+      "scores": {
+        "yangxu": 1,
+        "phlegm": 0.5
+      }
+    },
+    {
+      "id": 11,
+      "text": "你爱叹气吗？（胸口闷闷的，总想叹口气才舒服）",
+      "dimension": "qiyu",
+      "category": "psych",
+      "reverse": false,
+      "scores": {
+        "qiyu": 1
+      }
+    },
+    {
+      "id": 12,
+      "text": "你属于『软胖』——臀部、大腿的肉松垮不紧实，而且吃得并不多，体重却还是很难降下来吗？",
+      "dimension": "qixu",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "qixu": 1
+      }
+    },
+    {
+      "id": 13,
+      "text": "压力大或心情不好时，你会靠吃东西来安慰自己吗？（一通暴食、吃到撑）",
+      "dimension": "qiyu",
+      "category": "psych",
+      "reverse": false,
+      "scores": {
+        "qiyu": 1,
+        "qixu": 1
+      }
+    },
+    {
+      "id": 14,
+      "text": "你的腰腹、胃脘或膝部特别怕冷，喜欢喝热饮，一喝凉的就胃痛或腹泻吗？",
+      "dimension": "yangxu",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "yangxu": 1
+      }
+    },
+    {
+      "id": 15,
+      "text": "你嘴里经常有黏腻/甜腻的感觉，早起容易口黏口臭吗？",
+      "dimension": "phlegm",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "phlegm": 1,
+        "dampheat": 0.5
+      }
+    },
+    {
+      "id": 16,
+      "text": "你容易闷闷不乐、情绪低落或精神紧张吗？",
+      "dimension": "pinghe",
+      "category": "body",
+      "reverse": true,
+      "scores": {
+        "pinghe": 1
+      }
+    },
+    {
+      "id": 17,
+      "text": "你的白带颜色偏黄、量偏多，或私处潮湿有异味吗？",
+      "dimension": "dampheat",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "dampheat": 1
+      }
+    },
+    {
+      "id": 18,
+      "text": "你偏爱油腻、重口味吗？（火锅、烧烤、炸物、红烧肥肉、重油重盐）",
+      "dimension": "dampheat",
+      "category": "diet",
+      "reverse": false,
+      "scores": {
+        "phlegm": 1,
+        "dampheat": 1
+      }
+    },
+    {
+      "id": 19,
+      "text": "你爱出汗吗（尤其后背、腋下），或稍一活动就心慌、气短喘不上气吗？",
+      "dimension": "qixu",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "qixu": 1
+      }
+    },
+    {
+      "id": 20,
+      "text": "你的 T 区（额头鼻翼）容易出油吗？",
+      "dimension": "phlegm",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "phlegm": 0.5,
+        "dampheat": 1
+      }
+    },
+    {
+      "id": 21,
+      "text": "你在经期前或经期时，身体沉重、面部浮肿，明明吃得不多却体重上涨吗？",
+      "dimension": "yangxu",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "yangxu": 1,
+        "phlegm": 0.5
+      }
+    },
+    {
+      "id": 22,
+      "text": "你容易心烦急躁、口干总想喝凉水吗？",
+      "dimension": "dampheat",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "dampheat": 1
+      }
+    },
+    {
+      "id": 23,
+      "text": "你三餐不太规律吗？（经常不吃早饭、晚饭太晚、深夜加餐或宵夜）",
+      "dimension": "phlegm",
+      "category": "diet",
+      "reverse": false,
+      "scores": {
+        "phlegm": 1,
+        "qixu": 0.5
+      }
+    },
+    {
+      "id": 24,
+      "text": "你比一般人更耐受不了寒冷吗？（冬天冷、空调冷、喝冷饮都不舒服）",
+      "dimension": "pinghe",
+      "category": "body",
+      "reverse": true,
+      "scores": {
+        "pinghe": 1
+      }
+    },
+    {
+      "id": 25,
+      "text": "你平时容易反复感冒吗？",
+      "dimension": "qixu",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "qixu": 1
+      }
+    },
+    {
+      "id": 26,
+      "text": "情绪一低落或经期前，你是不是就没胃口、只想窝着不动？",
+      "dimension": "qiyu",
+      "category": "psych",
+      "reverse": false,
+      "scores": {
+        "qiyu": 1,
+        "yangxu": 0.5
+      }
+    },
+    {
+      "id": 27,
+      "text": "你会总觉得身体沉甸甸的，像裹着湿棉被，不轻松不爽快吗？",
+      "dimension": "phlegm",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "phlegm": 1,
+        "qixu": 0.5
+      }
+    },
+    {
+      "id": 28,
+      "text": "你口中发苦，或伴有口臭，或伴大便黏滞不爽、黏马桶冲不干净吗？",
+      "dimension": "dampheat",
+      "category": "body",
+      "reverse": false,
+      "scores": {
+        "dampheat": 1
+      }
+    }
+  ],
+  "bmiTips": {
+    "underweight": [
+      "诡秘，秤上的数字是身体的一封短信，你的身体正该悄悄存粮呢！",
+      "诡秘，知道你对自己的要求甚高，但也不要过于苛责自己，健康身材是最美丽的！",
+      "诡秘别急着羡慕别人的体重，你正该要一点点养回元气呢。",
+      "诡秘你身上少的不单单是脂肪，还是身体被消耗掉的底气，咱们努力把它养回来。",
+      "在中医看来，偏瘦多是脾胃不运、气血不足的信号，诡秘你该好好滋补滋补了。",
+      "诡秘，体重轻不代表代谢快，仔细想一想，你最近是不是总没力气？",
+      "偷偷告诉你诡秘，你这种『轻装上阵』的体质，只要吃对了，很容易养出好气色！",
+      "诡秘，你现在已经很完美了！可以适当放纵几顿，没关系的，好好养自己最最重要！",
+      "诡秘，你的身体在等你添柴火，吃得香一点、睡得暖一点，它会给你回礼的。",
+      "拥抱每一天的自己！把早餐吃回三餐里，诡秘你的身材会更健美的！"
+    ],
+    "normal": [
+      "诡秘，BMI正常不代表可以放肆吃哦，小心隐形脂肪偷偷囤积",
+      "现在的体重很达标，但对于你的体质来说，维持比减重更重要！",
+      "诡秘你的底子很好！只要顺应体质做好日常调理，身材就能一直保持",
+      "诡秘别盲目节食啦，现在正是黄金状态，咱们把重点放在塑形上",
+      "诡秘你的体重很健康，同时也要多关注体脂率，警惕“泡芙人”体质"
+    ],
+    "overweight": [
+      "诡秘，超重一点点没关系，其实是身体在提醒你，该给它多一点关注和温柔啦。",
+      "诡秘，这时候其实是『虚胖』，跟吃多吃少没关系，是身体代谢还在“打瞌睡”。",
+      "中医常说“肥人多气虚”，真不是嘴馋，是脾胃运化偷懒了，没把废物排出去。",
+      "体重秤上的数字只是参考，千万别焦虑，咱们从体质根源慢慢调理就好。",
+      "诡秘别急，在这个阶段调理其实最容易出效果！只要方向对了，身体很快就会给你正反馈。",
+      "感觉肉肉是不是特别容易囤在肚子上？中医上来讲，这是体内“痰湿”在捣鬼。",
+      "没关系的诡秘！身体现在可能就是有点“堵”，少点负担，多点日常活动，整个人都会轻盈起来。",
+      "诡秘你是最佳潜力股！",
+      "频喝水、少熬夜，先把代谢养起来，体重自己就会悄悄往下走。",
+      "诡秘！千万别去盲目节食，咱们需要的是把身体的“代谢开关”重新打开。"
+    ],
+    "mild_obese": [
+      "诡秘，体重稍微超出了预期别怕，只要找对原因，咱们完全可以温柔地把它降下来。",
+      "感觉最近身体特别沉重、容易累？那是湿气在悄悄堆积，从今天起，咱们帮身体做个“大扫除”。",
+      "诡秘你是不是也“肌肉松松软软”的，其实摸清了体质规律，对症调理起来贼快。",
+      "别让体重秤绑架了你的心情，数字只是个参考，咱们一步一步来，健康轻盈才是真的美。",
+      "诡秘如果你测出偏“痰湿”，听我的，先去健脾祛湿，这比你盲目去跑步流汗管用得多！",
+      "诡秘需要给身体减减负，少一点奶茶甜食，多去散散步，保证睡个好觉，身体自然就通透了。",
+      "千万别用饿肚子来惩罚自己！脾胃饿坏了，基础代谢直接拉胯，以后只会变得更难瘦。",
+      "诡秘处在这个阶段其实最好逆袭！只要方向对，坚持两三个月，你就能看到一个脱胎换骨的自己。",
+      "诡秘别气馁，你的身体代谢没坏，它只是暂时“冬眠”了，咱们一起把它叫醒。",
+      "诡秘别着急，我们一起去遇见那个更轻盈、更自信的自己。"
+    ],
+    "moderate_obese": [
+      "诡秘，你现在最不需要的就是自责，咱们需要的是一次全身心的重启。",
+      "别着急诡秘，接下来的路，咱们一点点慢慢来。",
+      "诡秘，把脾胃养好，健脾化痰，气机通畅，代谢自然就上来了。",
+      "诡秘，接下来，咱们把作息、饮食和情绪一起纳入计划，给自己一次认真的身体大扫除。",
+      "诡秘，最好的改变不是体重秤上的数字，是睡眠变好了、气色亮了、整个人感觉轻盈了。",
+      "诡秘，这不是个人役，把不良情绪和熬夜习惯一起丢掉，咱们一起调整。",
+      "诡秘给身体一点时间，咱们不急。",
+      "诡秘，如果觉得身体负担重，你的心里压力大，建议找专业医生做一次全面体检，咱们不一个人硬扛。",
+      "诡秘，中医常说“湿易困阻中焦”，只要咱们抓住“健脾化痰”这个根，往下扎根，一定会慢慢好起来的。",
+      "诡秘，咱们不跟体重死磕了，咱们跟身体站在一边，好好照顾自己。"
+    ],
+    "severe_obese": [
+      "诡秘数字不能定义你，你本来就值得被这个世界好好对待。",
+      "诡秘，你的身体其实一直在用它的方式努力保护你，现在是时候好好听听它的声音了。",
+      "诡秘咱们现在的第一任务真的不是饿肚子减肥，而是去医院做一次全面的健康评估。",
+      "诡秘不用逼自己太紧，停止内耗。给身体一点温柔的时间，它会慢慢给你惊喜的。",
+      "诡秘我们从最小的改变开始——一顿清淡的早午饭，一次十五分钟的散步。",
+      "诡秘请永远记住，你的闪光点和这串冰冷的数字毫无关系。",
+      "诡秘，中医常说‘胖人多气虚’，你现在需要的是‘补气扶正’，而不是用极端方法去狠狠消耗自己。",
+      "诡秘，今晚的第一步，就是先睡个安稳的好觉。",
+      "诡秘如果可以，一定要找专业的医生和营养师带你走这段路，千万别一个人盲目试错、硬扛。",
+      "加油诡秘，第一步永远是最困难的。"
+    ]
+  },
+  "underageTips": [
+    "小女宝，你现在正是长身体的时候呀，BMI 只是你成长曲线上的一个小点，不用太在意。",
+    "亲爱的女宝，青春期激素变化大，体重忽上忽下是很正常的，这说明你的身体正在努力长大！",
+    "亲爱的女宝，现阶段千万不要节食！我们只做一件事：让你吃得好、睡得香，平安健康地追求理想。",
+    "亲爱的女宝，你还在黄金发育生长期，别让秤上的数字欺负你，健康是最重要的！",
+    "亲爱的女宝，青春期激素会让体重起起伏伏，这是身体发育的必经之路，等过几年自然就会稳定下来的。",
+    "女宝，你此刻正常的生长发育，比轻飘飘的体重重要一万倍！",
+    "亲爱的女宝，如果真的很在意，请告诉爸爸妈妈或医生大夫，让他们陪你一起想办法。",
+    "亲爱的女宝，这个阶段只给你一条建议：好好吃饭，好好长大，别的不着急。",
+    "宝贝你的身体正在忙着“打地基”长个子呢，我们要好好呵护它，不要苛求自己。",
+    "亲爱的女宝你记住：数字绝对定义不了你，你现在最重要的任务，就是像小树苗一样健康长大！"
+  ],
+  "comprehensiveEvaluation": {
+    "hiddenFat": {
+      "title": "隐性胖 · 瘦着的脂肪",
+      "condition": "BMI 正常或偏低，但体脂率偏高（≥25%）",
+      "text": "你的 BMI 在安全线内，体脂却悄悄越了界——这是典型的『隐性胖』，肌肉正被脂肪替换。BMI 正常的高体脂女性，约 1/3 存在胰岛素抵抗。",
+      "advice": "减脂重点应从『掉秤』转为『降体脂、保肌肉』：增加抗阻训练与蛋白质摄入（每公斤体重 1.2-1.6g），保证 7-8 小时睡眠；若体脂率持续 ≥30% 或伴月经不规律、痤疮、多毛，建议内分泌科与中医科联合评估。"
+    },
+    "healthyFull": {
+      "title": "健康丰满 · 不用太焦虑",
+      "condition": "BMI 偏高，但体脂率正常（<25%）",
+      "text": "你的 BMI 越了线，体脂率说明这不是脂肪堆积，而是骨架与肌肉的重量——这是『健康丰满』。中医讲『肥白人多痰湿』，你的代谢基础并不差。",
+      "advice": "对健康丰满型，不建议盲目节食减重，容易流失肌肉、越减越松垮。更优策略是『塑形优先』：力量训练改善线条与骨密度，有氧每周 150 分钟，把 BMI 自然带入正常区间，同时关注睡眠与情绪，体质调理以健脾化湿、防止向痰湿质转化为主。"
+    },
+    "overweightHighFat": {
+      "title": "偏胖倾向 · 体脂率偏高",
+      "condition": "BMI ≥24 且体脂率 ≥25%",
+      "text": "你的 BMI 与体脂率均偏高，提示脂肪堆积风险增加，建议结合腰围、饮食、活动量与身体状况综合评估",
+      "advice": "建议循序渐进调整饮食结构并增加规律活动，避免极端节食；如体脂率持续偏高或伴有其他不适，可咨询正规医疗机构的专业人员"
+    }
+  },
+  "advice": [
+    {
+      "id": "phlegm_diet",
+      "constitutionId": "phlegm",
+      "title": "痰湿质 · 化痰祛湿",
+      "principle": "健脾助运、祛湿化痰、通利三焦",
+      "foodGuidance": "多用平性温性、辛甘苦味食材，如薏苡仁、茯苓、陈皮、荷叶、白术、扁豆、冬瓜、丝瓜；少甜腻少油炸，戒奶茶与含糖饮料。",
+      "lifestyle": "规律有氧 30 分钟 × 每周 5 次；少久坐；每餐七分饱，晚餐尤其清淡。",
+      "expected": "坚持 3 个月减重率可达 10%（广东省肥胖专病联盟共识），可有效降低 BMI。",
+      "keyPoint": "这是与你代谢问题关联最强的体质，优先调理收益最高。",
+      "diet": "多食薏苡仁、茯苓、陈皮、荷叶、冬瓜等健脾化湿食材；少甜腻、少油炸，避免含糖饮料；每餐七分饱，晚餐清淡",
+      "exercise": "规律进行有氧运动，每次约30分钟，每周约5次，循序渐进增加运动量",
+      "routine": "减少久坐，增加日常活动",
+      "taboo": "忌久坐少动与暴饮暴食，避免汗出不透及骤然爆发式发力；痰湿易夹血瘀，运动宜循序渐进"
+    },
+    {
+      "id": "qixu_diet",
+      "constitutionId": "qixu",
+      "title": "气虚质 · 健脾益气",
+      "principle": "健脾益气、充养气血，先补脾气再谈化痰湿",
+      "foodGuidance": "以平性温性、甘味为主，如山药、小米、大枣、莲子、黄芪、鸡肉、瘦牛肉、香菇；少生冷少过饥，避免长期节食。",
+      "lifestyle": "运动宜柔缓（八段锦、太极、散步），循序渐进增加运动量；保证 7-8 小时睡眠，不盲目追求高强度燃脂。",
+      "expected": "提高基础代谢与运动耐力，让减重后不易反弹。",
+      "keyPoint": "『肥人多气虚』，节食减重越猛越伤气，越减越反弹。",
+      "diet": "宜山药、小米、大枣、莲子、黄芪等健脾益气食材；少生冷、少过饥，避免长期节食",
+      "exercise": "宜八段锦、太极、散步等柔缓运动，循序渐进增加运动量",
+      "routine": "保证每日7至8小时睡眠，避免熬夜",
+      "taboo": "『肥人多气虚』，节食减重过猛易伤气并增加反弹风险；避免长时间高强度运动及大汗耗气"
+    },
+    {
+      "id": "dampheat_diet",
+      "constitutionId": "dampheat",
+      "title": "湿热质 · 清热祛湿",
+      "principle": "清热祛湿、健运脾胃，可提高基础代谢率",
+      "foodGuidance": "多用平性寒凉、辛甘苦味，如绿豆、冬瓜、丝瓜、苦瓜、芹菜、荸荠；忌温热辛辣（生姜、羊肉、火锅）、忌酒、忌油炸。",
+      "lifestyle": "保证睡眠以清肝火；保持皮肤清洁与透气，避免高糖高脂饮食加重出油与痤疮。",
+      "expected": "可改善尿酸与 C 反应蛋白水平，减少代谢性疾病发生。",
+      "keyPoint": "你的痤疮与出油问题多由此体质驱动，清热祛湿是同时调理皮肤与体重的关键。",
+      "diet": "宜绿豆、冬瓜、苦瓜、芹菜等清热祛湿食材；忌温热辛辣、饮酒及油炸食品",
+      "exercise": "选择早晚凉爽时段进行温和有氧运动，以微微出汗为度",
+      "routine": "规律作息，保证充足睡眠，保持皮肤清洁与透气",
+      "taboo": "避免高温环境下暴汗或大汗淋漓，以免伤津助热；少居闷热潮湿环境"
+    },
+    {
+      "id": "yangxu_diet",
+      "constitutionId": "yangxu",
+      "title": "阳虚质 · 温补脾肾",
+      "principle": "温补脾肾阳气、通阳化气行水",
+      "foodGuidance": "多用温性热性平性、辛甘咸味，如生姜、韭菜、核桃、羊肉、栗子、桂圆、当归炖汤；忌生冷冰饮、忌苦寒（苦瓜、绿茶大量饮）。",
+      "lifestyle": "注意腰腹足部保暖，可用温水泡脚、艾灸足三里与关元；适度温和运动，避免大汗伤阳。",
+      "expected": "改善阳虚状态，调整脾胃功能，气血化源充沛，从而提高运动干预的减重疗效，并改善水肿。",
+      "keyPoint": "你的水肿与怕冷多为阳虚水液不化所致，温阳比单纯利水更根本。",
+      "diet": "宜生姜、韭菜、核桃、羊肉、栗子等温性食材；忌生冷冰饮及苦寒食物",
+      "exercise": "宜八段锦、快走等温和运动，以微微出汗为度",
+      "routine": "注意腰腹与足部保暖，可用温水泡脚，避免熬夜",
+      "taboo": "阳虚易有水液不化；避免冷水游泳、大汗伤阳及长期接触寒冷环境"
+    },
+    {
+      "id": "qiyu_diet",
+      "constitutionId": "qiyu",
+      "title": "气郁质 · 疏肝理气",
+      "principle": "行气解郁、芳香开郁，兼调月经与情绪",
+      "foodGuidance": "多用平性温性、甘辛味食材，如玫瑰花、菊花、佛手、陈皮、金桔、百合、小麦、香橼；少咖啡因与浓茶（加重手抖心悸与焦虑），少甜腻（避免助湿生痰）。",
+      "lifestyle": "规律作息是首要的：23 点前入睡可明显改善焦虑；每周 3 次八段锦或快走，用『动』来化『郁』；经前一周减少咖啡因，增加镁与 B6 食物；学会向人倾诉，气郁最怕憋着。",
+      "expected": "可降低 BMI、腰围与腰臀比，改善因肥胖导致的月经不调，提升生活质量。",
+      "keyPoint": "你的胖有一部分是被情绪喂出来的——气顺了，痰湿自然就化开了一半。",
+      "diet": "宜玫瑰花、佛手、陈皮、金桔、百合等食材；少咖啡因、浓茶及甜腻食物",
+      "exercise": "宜跑步、打球等户外群体运动，选择自己能持续的强度",
+      "routine": "保持社交与情绪表达，可听轻音乐、睡前泡脚，尽量在23点前入睡",
+      "taboo": "避免独自闷居及长期压抑情绪；压力大时及时倾诉与疏解"
+    },
+    {
+      "id": "pinghe_diet",
+      "constitutionId": "pinghe",
+      "title": "平和质 · 五味不偏",
+      "principle": "五味不偏、阴阳平衡，长期维持 BMI",
+      "foodGuidance": "谷类为主，多吃蔬菜水果薯类与富含钙的食品，少油少盐，按季节选食，不偏嗜单一食物。",
+      "lifestyle": "保持规律作息与运动习惯，防止由平和转偏颇。",
+      "expected": "以维持为主，减少再发肥胖的概率。",
+      "keyPoint": "你本身代谢能力良好，重点在长期保持而非强力干预。",
+      "diet": "谷类为主，适量摄入蔬菜、水果和薯类，少油少盐，不偏嗜单一食物",
+      "exercise": "规律进行有氧运动并适当加入力量训练，保持稳定活动量",
+      "routine": "保持规律作息，按季节调整饮食与日常活动",
+      "taboo": "无特定体质禁忌；避免无节制节食与长期熬夜，防止体质由平和转为偏颇"
+    }
+  ],
+  "disclaimer": "本自测为健康管理与体质倾向性筛查工具，不等同于疾病诊断。体质可调，若存在明确不适请到正规医疗机构中医科就诊；体重下降 5%-10% 后建议重新测评并调整方案。",
+  "constitutionProfiles": [
+    {
+      "id": "phlegm",
+      "name": "痰湿质",
+      "definition": "痰湿凝聚，以形体肥胖、腹部肥满、口黏苔腻等为主要特征。",
+      "typical_features": "面部油脂多，多汗且黏，胸闷痰多，口黏腻或甜，舌胖大苔腻，脉滑。",
+      "obesity_root": "脾失健运，水湿内停，聚湿成痰；身体的水液代谢通道如同“下水道”发生拥堵，排泄效率大幅降低；水湿与脂浊互结，停滞在体内无处排泄，便极易囤积成腰腹部松软的脂肪（中医称之为“膏人”）",
+      "obesity_causes": "先天脾土偏弱，或者诡秘你本身基底就偏痰湿；后天最大诱因，诡秘你反思一下，是不是偏爱肥甘厚味（奶茶炸鸡甜品），外加久坐不动、疏于运动伤了脾胃；脾之运化受限，水液代谢失职，导致体内湿气泛滥；长此以往代谢变慢，脂肪堆积皮肉松软，让你变成所谓的“喝水都胖”的体质",
+      "daily_advice": "多食薏苡仁、茯苓、陈皮、冬瓜等健脾化湿之品，忌甜腻油炸、戒含糖饮料；每餐七分饱，坚持有氧运动。",
+      "exercise_taboo": "忌久坐少动与暴饮暴食，忌汗出不彻、骤然爆发式发力；痰湿易夹血瘀，宜渐进有氧以化湿。"
+    },
+    {
+      "id": "dampheat",
+      "name": "湿热质",
+      "definition": "湿热内蕴，以面垢油光、口苦、苔黄腻等为主要特征。",
+      "typical_features": "面垢油光易生痤疮，口苦口干，身重困倦，大便黏滞不爽，苔黄腻。",
+      "obesity_root": "湿热内蕴，阻滞气机；身体里像闷着一个“桑拿房”；湿热与痰湿往往互相交结，导致运化通道严重受阻，脂肪难以被正常代谢，尤其容易出现腹型肥胖（脂肪堆积在肚子上）",
+      "obesity_causes": "先天体质偏湿热，或者长期处于潮湿闷热的环境；熬夜频繁，偏爱辛辣、油腻、重口味的食物（如烧烤、火锅）；脾胃运化不及，湿浊内停，郁久化热，湿热交结阻滞气机；不仅面部容易出油长痘，脂肪也容易紧紧扒在腹部减不掉，形成难缠的“顽固肉”",
+      "daily_advice": "宜绿豆、冬瓜、苦瓜、芹菜等清热祛湿之品，忌温热辛辣、忌酒、忌油炸；保证睡眠以清肝火。",
+      "exercise_taboo": "忌高温暴汗、大汗淋漓以免伤津助热，忌久居湿热环境；宜早晚凉爽时缓中有氧，汗出微即可。"
+    },
+    {
+      "id": "qixu",
+      "name": "气虚质",
+      "definition": "元气不足，以疲乏、气短、自汗等为主要特征。",
+      "typical_features": "语音低弱，气短懒言，容易疲乏，精神不振，易出汗，舌边有齿痕。",
+      "obesity_root": "气虚则运化无力，水谷精微无法转化为气血，反而蓄积成脂浊；身体好比“电量”不足，代谢效力持续降低，甚至达不到维持基础消耗的水平；因此，哪怕你的饮食和运动都在指标范围内，也极易形成虚胖",
+      "obesity_causes": "先天元气不足，或长期劳累、过度节食损伤了正气；平时缺乏运动，或者经常思虑过度、熬夜，进一步消耗了气血；气机虚弱，脾胃运化无力，吃进去的营养无法转化为气血；反而停滞在体内变成了脂肪，导致典型虚胖，身上的肉大都松松垮垮，且越减越没力气，容易反弹",
+      "daily_advice": "宜山药、小米、大枣、莲子、黄芪等健脾益气之品，忌生冷与长期节食；宜柔缓运动多眠，睡眠7-8小时。",
+      "exercise_taboo": "忌长时间高强度大汗耗气，忌过度思虑与熬夜；宜八段锦、太极、散步等柔缓之功，循序渐进。"
+    },
+    {
+      "id": "yangxu",
+      "name": "阳虚质",
+      "definition": "阳气不足，以畏寒怕冷、手足不温等虚寒表现为主要特征。",
+      "typical_features": "畏冷手足不温，喜热饮食，精神不振，舌淡胖嫩，脉沉迟。",
+      "obesity_root": "阳不制阴，温煦气化失司；身体像处在“寒冬”；由于阳气匮乏、气化无力，水液停滞易引发水肿；同时整体代谢处于“低耗能”状态，脂肪便悄然囤积下来",
+      "obesity_causes": "先天阳气偏弱，或者平时贪凉喜冷，长期待在空调房里；爱喝冰饮、吃生冷食物，甚至为了减肥盲目节食，损伤了脾肾之阳；阳气不足，温煦和气化功能失职，身体为了保暖会主动囤积脂肪；同时水液无法蒸腾排出，导致下半身极易水肿，手脚常年冰凉，基础代谢率低下",
+      "daily_advice": "宜生姜、韭菜、核桃、羊肉、栗子等温补之品，忌生冷冰饮、忌苦寒；注意腰腹保暖，可温水泡脚。",
+      "exercise_taboo": "忌大汗伤阳与冷水游泳，忌熬夜耗阳；宜温和运动如八段锦、快走，以微微汗出为度。"
+    },
+    {
+      "id": "qiyu",
+      "name": "气郁质",
+      "definition": "气机郁滞，以神情抑郁、忧虑脆弱等气郁表现为主要特征。",
+      "typical_features": "常感闷闷不乐，情绪低沉，容易紧张焦虑，胸胁胀满，喜欢叹气。",
+      "obesity_root": "肝气郁结，气机不畅；代谢通道像“堵车”一样停滞；气机郁滞不仅直接拖慢了脾胃运化与水分代谢，还容易在压力下诱发暴饮暴食，双重因素叠加，导致热量无处消耗而化为脂肪",
+      "obesity_causes": "先天性格比较敏感，或者长期处于高压的工作、学习环境中；情绪焦虑、郁闷，压力一大就想靠暴饮暴食来安慰自己；肝气郁结，气机不畅，导致全身代谢循环像“堵车”一样停滞；吃进去的热量难以消耗，全变成了脂肪囤积，形成典型的“压力型情绪肥胖”",
+      "daily_advice": "宜多参加社交活动，听轻音乐，睡前泡脚，保持心情舒畅；23点前入睡。",
+      "exercise_taboo": "宜多参加跑步、打球等能发泄情绪的户外群体运动，忌独自闷在家里。"
+    },
+    {
+      "id": "pinghe",
+      "name": "平和质",
+      "definition": "阴阳气血调和，以体态适中、面色红润、精力充沛等为主要特征。",
+      "typical_features": "面色润泽，精力充沛，耐受寒热，胃纳佳，睡眠良好，二便正常，舌淡红。",
+      "obesity_root": "脏腑功能协调、运化正常；本身没有易胖的病理机制；胖瘦主要取决于最近的饮食和运动量是否失衡",
+      "obesity_causes": "先天禀赋良好，阴阳气血调和，脏腑功能协调；如果近期出现体重上升，诡秘你反思一下是不是因为近期饮食不节制（工作周期/节假日时期，多有聚餐）或运动量骤减（工作/生活压力一大，少有时间和精力）；身体本身没有易胖的病理机制，代谢处于健康平衡状态；只要恢复健康的饮食作息，体重很容易就能自行回落，无需过度焦虑",
+      "daily_advice": "五味不偏、阴阳平衡，谷类为主、多食蔬菜薯类，少油少盐；规律作息与运动，防止由平和转偏颇。",
+      "exercise_taboo": "无体质禁忌；忌无节制节食与长期熬夜，宜规律有氧加力量训练，保持代谢稳定。"
+    }
+  ]
+}</script>
+<script>
+'use strict';
+const DATA=JSON.parse(document.getElementById('quiz-data').textContent);
+const $=id=>document.getElementById(id);
+const coreIds=['phlegm','qixu','dampheat','yangxu'];
+const answers=Array(DATA.questions.length).fill(null);
+let currentIndex=0;
+let isTransitioning=false;
+let autoAdvanceTimer=null;
+let bmiRangeKey='';
+let currentBmi=null;
+let usedTip="";
+let bodyFatTouched=false;
+const usedTipHistory=new Set();
+let ageFeedbackTip='';
+let bmiFeedbackTip='';
+let resultBMIMessage='';
+let resultUnderageMessage='';
+let modalTrigger=null;
+let fullObesityRoot='';
+function setView(id){['home-view','basic-view','quiz-view','result-view'].forEach(view=>$(view).hidden=view!==id);window.scrollTo({top:0,behavior:'smooth'});}
+function getConstitution(id){return DATA.constitutions.find(item=>item.id===id);}
+function getConstitutionProfile(id){return(DATA.constitutionProfiles||[]).find(item=>item.id===id)||{};}
+function rangeForBMI(bmi){return DATA.basicInfoModule.bmiRanges.find(range=>bmi>=range.min&&(range.exclusiveMax?bmi<range.max:bmi<=range.max));}
+function drawUniqueTip(pool){
+  if(!Array.isArray(pool)||!pool.length)return '';
+  let tip=pool[Math.floor(Math.random()*pool.length)];
+  let tries=0;
+  while((tip===usedTip||usedTipHistory.has(tip))&&tries<pool.length*20){tip=pool[Math.floor(Math.random()*pool.length)];tries++;}
+  if(tip===usedTip||usedTipHistory.has(tip)){const fresh=pool.find(candidate=>candidate!==usedTip&&!usedTipHistory.has(candidate));if(fresh)tip=fresh;else tip=pool.find(candidate=>candidate!==usedTip)||'';}
+  usedTip=tip;
+  if(tip)usedTipHistory.add(tip);
+  return tip;
+}
+function renderHome(){
+  const grid=$('home-types');grid.replaceChildren();
+  const descriptions={phlegm:'津液运化失常，\n水湿内停，聚湿成痰',qixu:'元气不足，\n脏腑功能低下',dampheat:'湿热胶结，\n遏阻气机',yangxu:'阳气不足，\n虚寒内盛'};
+  coreIds.forEach(id=>{const constitution=getConstitution(id);if(!constitution)return;const card=document.createElement('article');card.className='type-card';const title=document.createElement('h2');title.textContent=constitution.name;const copy=document.createElement('p');copy.textContent=descriptions[id]||constitution.desc||'';card.append(title,copy);grid.append(card);});
+}
+function resetSurvey(){
+  answers.fill(null);currentIndex=0;bmiRangeKey='';currentBmi=null;usedTip='';usedTipHistory.clear();ageFeedbackTip='';bmiFeedbackTip='';resultBMIMessage='';resultUnderageMessage='';bodyFatTouched=false;
+  $('basic-form')?.reset();
+  // Fields are created only when the user starts; guard them on the first click.
+  const ageTip=$('age-tip'),bmiTip=$('bmi-tip'),bmi=$('bmi'),next=$('basic-next');
+  if(ageTip)ageTip.textContent='';if(bmiTip)bmiTip.textContent='';if(bmi)bmi.value='';if(next)next.disabled=true;
+}
+function renderBasicForm(){
+  const module=DATA.basicInfoModule;$('basic-title').textContent=module.title;$('basic-subtitle').textContent=module.subtitle;
+  const grid=$('field-grid');grid.replaceChildren();
+  module.fields.forEach(field=>{
+    const wrap=document.createElement('div');wrap.className='field'+(field.key==='bmi'?' full':'');
+    const label=document.createElement('label');label.htmlFor=field.key;label.textContent=field.label;
+    if(field.unit){const unit=document.createElement('span');unit.className='unit';unit.textContent=field.unit;label.append(unit);}
+    const input=document.createElement('input');input.id=field.key;input.name=field.key;input.type=field.inputType==='computed'?'text':field.inputType;input.placeholder=field.placeholder||'';
+    if(field.min!==undefined)input.min=field.min;if(field.max!==undefined)input.max=field.max;if(field.step!==undefined)input.step=field.step;
+    if(field.required)input.required=true;if(field.readonly)input.readOnly=true;if(field.key==='bmi')input.placeholder='填写身高和体重后自动计算';
+    wrap.append(label,input);
+    if(field.key==='age'){const ageTip=document.createElement('p');ageTip.className='tip';ageTip.id='age-tip';wrap.append(ageTip);}
+    else if(field.key==='bmi'){const bmiTip=document.createElement('p');bmiTip.className='tip';bmiTip.id='bmi-tip';wrap.append(bmiTip);}
+    if(field.key==='age'){const help=document.createElement('p');help.className='help';help.textContent='年龄是评估基础代谢的重要参考哦';wrap.append(help);}
+    else if(field.key==='bodyFatRate'){input.placeholder='系统自动估算，可手动修改';const help=document.createElement('p');help.className='help';help.textContent='系统已自动估算，如有手环数据可修改覆盖';wrap.append(help);}
+    else if(field.helpText){const help=document.createElement('p');help.className='help';help.textContent=field.helpText;wrap.append(help);}
+    grid.append(wrap);
+  });
+  ['age','height','weight'].forEach(key=>$(key).addEventListener('input',updateBasicInfo));
+  $('bodyFatRate').addEventListener('input',()=>{bodyFatTouched=true;updateBasicInfo();});
+  updateBasicInfo();
+}
+function updateBasicInfo(){
+  const age=Number($('age').value);const height=Number($('height').value);const weight=Number($('weight').value);
+  if(age<18&&age>=10&&!ageFeedbackTip){ageFeedbackTip=drawUniqueTip(DATA.underageTips);$('age-tip').textContent=ageFeedbackTip;}
+  else if(age>=18||!age){ageFeedbackTip='';$('age-tip').textContent='';}
+  if(height>0&&weight>0){
+    currentBmi=weight/((height/100)**2);$('bmi').value=currentBmi.toFixed(DATA.basicInfoModule.fields.find(f=>f.key==='bmi').precision);
+    const range=rangeForBMI(currentBmi);
+    if(range&&range.key!==bmiRangeKey){bmiRangeKey=range.key;bmiFeedbackTip=drawUniqueTip(DATA.bmiTips[range.key]);$('bmi-tip').textContent=bmiFeedbackTip;}
+    const ageValue=Number($('age').value);
+    if(ageValue>0&&!bodyFatTouched)$('bodyFatRate').value=(1.2*currentBmi+.23*ageValue-5.4).toFixed(1);
+  }else{currentBmi=null;bmiRangeKey='';bmiFeedbackTip='';$('bmi').value='';$('bmi-tip').textContent='';if(!bodyFatTouched)$('bodyFatRate').value='';}
+  $('basic-next').disabled=!$('basic-form').checkValidity()||!currentBmi;
+}
+function startQuiz(){
+  if(!$('basic-form').reportValidity())return;
+  const age=Number($('age').value);if(age<18&&!ageFeedbackTip){ageFeedbackTip=drawUniqueTip(DATA.underageTips);$('age-tip').textContent=ageFeedbackTip;}
+  setView('quiz-view');renderQuestion();
+}
+function renderQuestion(){
+  const question=DATA.questions[currentIndex];$('question-count').textContent=`第 ${currentIndex+1} / ${DATA.questions.length} 题`;
+  $('progress-fill').style.width=`${(currentIndex/DATA.questions.length)*100}%`;
+  document.querySelector('.progress').setAttribute('aria-valuenow',String(currentIndex));
+  $('question-text').textContent=question.text;
+  $('prev-question').disabled=currentIndex===0;$('next-question').disabled=answers[currentIndex]===null;$('next-question').textContent=currentIndex===DATA.questions.length-1?'查看结果':'下一题';
+  const options=$('answer-options');options.replaceChildren();
+  DATA.options.forEach(option=>{const button=document.createElement('button');button.type='button';button.className='choice';button.setAttribute('role','radio');button.setAttribute('aria-checked',String(answers[currentIndex]===option.value));const n=document.createElement('span');n.className='choice-num';n.textContent=option.value;const label=document.createElement('span');label.className='choice-label';label.textContent=option.label;button.append(n,label);button.addEventListener('click',()=>{if(isTransitioning)return;answers[currentIndex]=option.value;options.querySelectorAll('.choice').forEach(item=>item.setAttribute('aria-checked','false'));button.setAttribute('aria-checked','true');$('next-question').disabled=false;isTransitioning=true;const selectedIndex=currentIndex;autoAdvanceTimer=setTimeout(()=>{autoAdvanceTimer=null;isTransitioning=false;if(currentIndex===selectedIndex)advanceQuestion();},400);});options.append(button);});
+}
+function cancelAutoAdvance(){if(autoAdvanceTimer!==null){clearTimeout(autoAdvanceTimer);autoAdvanceTimer=null;}isTransitioning=false;}
+function advanceQuestion(){
+  if(answers[currentIndex]===null)return;
+  if(currentIndex<DATA.questions.length-1){currentIndex++;renderQuestion();$('question-text').focus({preventScroll:true});}
+  else{$('progress-fill').style.width='100%';document.querySelector('.progress').setAttribute('aria-valuenow',String(DATA.questions.length));renderResult();}
+}
+function goToPreviousQuestion(){
+  cancelAutoAdvance();
+  if(currentIndex<=0){$('prev-question').disabled=true;return;}
+  currentIndex--;
+  renderQuestion();
+  $('question-text').focus({preventScroll:true});
+}
+function calculateScores(){
+  const scores=Object.fromEntries(DATA.constitutions.map(c=>[c.id,{raw:0,min:0,max:0,transformed:0}]));
+  DATA.questions.forEach((question,index)=>{const answer=answers[index];if(answer===null)return;const adjusted=question.reverse?6-answer:answer;Object.entries(question.scores||{}).forEach(([id,weight])=>{const w=Number(weight);if(!scores[id]||w<=0)return;scores[id].raw+=adjusted*w;scores[id].min+=1*w;scores[id].max+=5*w;});});
+  Object.values(scores).forEach(item=>{item.transformed=item.max===item.min?0:Math.round(((item.raw-item.min)/(item.max-item.min))*1000)/10;});return scores;
+}
+function classify(scores){
+  const pinghe=getConstitution('pinghe');const pingheScore=scores.pinghe?.transformed||0;
+  const biased=DATA.constitutions.filter(c=>c.id!=='pinghe').map(c=>({...c,...scores[c.id]})).sort((a,b)=>b.transformed-a.transformed);
+  const pingheHighest=pingheScore>=(biased[0]?.transformed||0);
+  const pingheYes=pingheHighest&&pingheScore>=60&&biased.every(c=>c.transformed<40);
+  const partialPinghe=pingheScore>=60&&!pingheYes;
+  const main=pingheYes?{...pinghe,...scores.pinghe}:biased[0];
+  const secondaries=biased.filter(c=>c.id!==main.id&&c.transformed>=30);
+  return{main,biased,secondaries,pingheScore,partialPinghe,pingheYes};
+}
+function renderChart(scores){
+  const chart=$('score-chart');chart.replaceChildren();
+  DATA.constitutions.map(c=>({...c,...scores[c.id]})).filter(c=>Number.isFinite(c.transformed)).sort((a,b)=>b.transformed-a.transformed).slice(0,6).forEach(c=>{const value=c.transformed||0;const col=document.createElement('div');col.className='chart-col';const plot=document.createElement('div');plot.className='plot';const line=document.createElement('div');line.className='threshold';const bars=document.createElement('div');bars.className='bars';const track=document.createElement('div');track.className='bar-track';const fill=document.createElement('div');fill.className='bar-fill'+(value>40?' high':'');fill.style.height=`${Math.max(0,Math.min(100,value))}%`;const valueLabel=document.createElement('span');valueLabel.className='bar-value';valueLabel.style.setProperty('--score',Math.max(0,Math.min(100,value)));valueLabel.textContent=value.toFixed(1);track.append(fill,valueLabel);bars.append(track);plot.append(bars,line);const name=document.createElement('span');name.className='chart-name';name.textContent=c.name.replace('质','');col.append(plot,name);chart.append(col);});
+}
+function bmiTipsForResult(){const range=rangeForBMI(currentBmi);resultBMIMessage=range?drawUniqueTip(DATA.bmiTips[range.key]):'';const age=Number($('age').value);resultUnderageMessage=age<18?drawUniqueTip(DATA.underageTips):'';}
+function renderFeedback(){const box=$('result-feedback');box.replaceChildren();[resultBMIMessage,resultUnderageMessage].filter(Boolean).forEach(text=>{const p=document.createElement('p');p.className='feedback-line';p.textContent=text;box.append(p);});}
+function renderBodyFat(){
+  const age=Number($('age').value);const entered=$('bodyFatRate').value.trim();const estimate=entered===''?1.2*currentBmi+.23*age-5.4:Number(entered);const isEstimate=!bodyFatTouched||entered==='';
+  $('bodyfat-module').hidden=false;$('bodyfat-value').textContent=`${isEstimate?'按题库指定公式估算':'你填写的体脂率'}：${estimate.toFixed(1)}%${isEstimate?'（1.20 × BMI + 0.23 × 年龄 − 5.4）':''}`;
+  const range=rangeForBMI(currentBmi);let evaluation=null;const fatHigh=estimate>=DATA.basicInfoModule.bodyFatThresholds.femaleHigh.min;const bmiHigh=currentBmi>=24;
+  if(currentBmi<18.5)evaluation=null;
+  else if(age>=18&&bmiHigh&&fatHigh)evaluation=DATA.comprehensiveEvaluation.overweightHighFat;
+  else if(age>=18&&(range?.key==='underweight'||range?.key==='normal')&&fatHigh)evaluation=DATA.comprehensiveEvaluation.hiddenFat;
+  else if(age>=18&&bmiHigh&&!fatHigh)evaluation=DATA.comprehensiveEvaluation.healthyFull;
+  $('bodyfat-evaluation').hidden=!evaluation;$('bodyfat-none').hidden=Boolean(evaluation);
+  if(evaluation){$('evaluation-title').textContent=evaluation.title;$('evaluation-copy').textContent=evaluation.text;$('evaluation-advice').textContent=evaluation.advice;}
+  else if(currentBmi<18.5){$('bodyfat-none').textContent='按数据来看，你目前的体重偏轻，建议日常适当增加营养，不要盲目节食哦。';}
+  else{$('bodyfat-none').textContent='按数据来看，你的身体处于健康区间，保持当前的饮食起居节奏，适当加入一些轻量运动即可。';}
+}
+function cleanAdviceText(value){
+  return String(value||'').replace(/<br\s*\/?>/gi,' ').replace(/<[^>]*>/g,' ').replace(/&nbsp;|&#160;/gi,' ').replace(/[\u200B-\u200D\uFEFF\u00A0]/g,' ').replace(/[\r\n\t]+/g,' ').replace(/\s+/g,' ').trim();
+}
+function splitClauses(text){
+  return cleanAdviceText(text).split(/[；;。]+/).map(part=>part.trim().replace(/[。；;]+$/,'')).filter(Boolean);
+}
+function renderSemicolonBreaks(element,text){
+  element.replaceChildren();
+  String(text||'').split('；').forEach((part,index)=>{if(index)element.append(document.createElement('br'));element.append(document.createTextNode(part));});
+}
+const causeSummaries={phlegm:['先天禀赋','饮食久坐','运化失职','脂肪堆积'],qixu:['元气不足','劳倦伤气','脾胃无力','虚胖反弹'],yangxu:['阳气偏弱','贪凉节食','温化失职','水肿代谢'],dampheat:['环境熏蒸','熬夜重口','湿热内阻','腹部顽固'],qiyu:['敏感高压','情绪进食','气机郁滞','热量囤积'],pinghe:['先天调和','饮食运动','代谢平衡','生活方式']};
+function renderCauses(element,text,constitutionId){
+  element.replaceChildren();
+  const numerals=['①','②','③','④'];const summaries=causeSummaries[constitutionId]||[];
+  String(text||'').split('；').filter(Boolean).forEach((clause,index)=>{const row=document.createElement('p');row.className='cause-item';const number=document.createElement('span');number.className='cause-number';number.textContent=numerals[index]||`${index+1}.`;const summary=document.createElement('strong');summary.className='cause-summary';summary.textContent=summaries[index]?`${summaries[index]}：`:'';row.append(number,summary,document.createTextNode(clause));element.append(row);});
+}
+function renderPlan(main){
+  const plan=DATA.advice.find(item=>item.constitutionId===main.id);const grid=$('plan-grid');grid.replaceChildren();
+  if(Number($('age').value)<18){
+    $('plan-principle').textContent=DATA.basicInfoModule.underageRule.note;
+    const safeTip=DATA.underageTips.find(t=>t.includes('千万不要节食'))||DATA.underageTips[0]||'';
+    const routine=DATA.underageTips.find(t=>t.includes('好好吃饭，好好长大'))||DATA.underageTips[7]||'';
+    [['饮食',safeTip],['运动',DATA.basicInfoModule.underageRule.note],['起居',routine],['宜忌','未成年人不展示减重方案；如需调整饮食或运动，请由监护人陪同并遵医嘱。']].forEach(([title,text])=>addPlanPanel(grid,title,text));return;
+  }
+  if(!plan){$('plan-principle').textContent='';[['饮食','题库暂未提供对应方案。'],['运动','题库暂未提供对应方案。'],['起居','题库暂未提供对应方案。'],['宜忌','请结合专业人员建议。']].forEach(([t,x])=>addPlanPanel(grid,t,x));return;}
+  $('plan-principle').textContent=plan.principle||'';
+  [['饮食',plan.diet],['运动',plan.exercise],['起居',plan.routine],['宜忌',plan.taboo]].forEach(([title,text])=>addPlanPanel(grid,title,text||'题库暂未提供对应内容。'));
+}
+function addPlanPanel(parent,title,text){const panel=document.createElement('article');panel.className='plan-panel';const h=document.createElement('h4');h.textContent=title;panel.append(h);splitClauses(text).forEach(clause=>{const p=document.createElement('p');p.className='plan-copy';p.textContent=clause;panel.append(p);});parent.append(panel);}
+function renderDisclaimer(){
+  const box=$('disclaimer');box.replaceChildren();
+  String(DATA.disclaimer||'').split(/[。！？；;]+/).map(line=>line.trim()).filter(Boolean).forEach(line=>{const p=document.createElement('p');p.textContent=line;box.append(p);});
+}
+function renderResult(){
+  const scores=calculateScores();const decision=classify(scores);const main=decision.main;const age=Number($('age').value);
+  const profile=getConstitutionProfile(main.id);
+  $('result-heading').textContent=main.name;
+  let sub=profile.obesity_root||'';
+  if(sub&&!/[。！？]$/.test(sub))sub+='。';if(decision.partialPinghe&&!profile.obesity_root)sub='整体平和，但也有偏颇体质倾向。'+(main.desc||'');
+  fullObesityRoot=String(profile.obesity_root||sub);
+  const rootPreview=fullObesityRoot.split('；')[0]||sub;
+  const rootHeading=$('result-subheading');renderSemicolonBreaks(rootHeading,rootPreview);
+  const rootDetails=document.createElement('button');rootDetails.id='root-details-trigger';rootDetails.type='button';rootDetails.className='detail-link';rootDetails.setAttribute('aria-haspopup','dialog');rootDetails.textContent='[查看详情]';rootDetails.addEventListener('click',()=>openInfoModal('root-modal','root-modal-close',rootDetails));rootHeading.append(document.createTextNode(' '),rootDetails);
+  renderSemicolonBreaks($('root-modal-copy'),fullObesityRoot);
+  const tags=$('secondary-types');tags.replaceChildren();const secondaryNames=decision.secondaries.map(item=>item.name);if(secondaryNames.length){const label=document.createElement('strong');label.className='secondary-label';label.textContent='兼夹倾向：';const names=document.createElement('span');names.className='secondary-names';names.textContent=secondaryNames.join(' ');tags.append(label,names);}
+  if(profile.obesity_causes){$('reason-module').hidden=false;renderCauses($('obesity-causes'),profile.obesity_causes,main.id);}else{$('reason-module').hidden=true;$('obesity-causes').replaceChildren();}
+  renderChart(scores);bmiTipsForResult();renderFeedback();renderBodyFat();$('result-metrics').textContent=`BMI：${currentBmi.toFixed(1)}`;renderPlan(main);
+  renderDisclaimer();setView('result-view');
+}
+renderHome();renderDisclaimer();
+$('start-button').addEventListener('click',()=>{resetSurvey();renderBasicForm();setView('basic-view');});
+$('basic-back').addEventListener('click',()=>setView('home-view'));
+$('basic-form').addEventListener('submit',event=>{event.preventDefault();startQuiz();});
+ $('prev-question').addEventListener('click',goToPreviousQuestion);
+$('next-question').addEventListener('click',()=>{cancelAutoAdvance();advanceQuestion();});
+$('unlock-button').addEventListener('click',()=>{modalTrigger=$('unlock-button');$('wechat-modal').hidden=false;$('modal-close').focus();});
+function closeModal(){$('wechat-modal').hidden=true;if(modalTrigger)modalTrigger.focus();}
+$('modal-close').addEventListener('click',closeModal);$('wechat-modal').addEventListener('click',event=>{if(event.target===$('wechat-modal'))closeModal();});
+function openInfoModal(modalId,closeId,trigger){const modal=$(modalId);modal.hidden=false;$(closeId).focus();modal.dataset.triggerId=trigger.id;}
+function closeInfoModal(modalId,closeId){const modal=$(modalId);modal.hidden=true;const trigger=$(modal.dataset.triggerId);if(trigger)trigger.focus();}
+$('root-modal-close').addEventListener('click',()=>closeInfoModal('root-modal','root-modal-close'));
+$('root-modal').addEventListener('click',event=>{if(event.target===$('root-modal'))closeInfoModal('root-modal','root-modal-close');});
+$('chart-note-trigger').addEventListener('click',event=>openInfoModal('rule-modal','rule-modal-close',event.currentTarget));
+$('rule-modal-close').addEventListener('click',()=>closeInfoModal('rule-modal','rule-modal-close'));
+$('rule-modal').addEventListener('click',event=>{if(event.target===$('rule-modal'))closeInfoModal('rule-modal','rule-modal-close');});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'){if(!$('wechat-modal').hidden)closeModal();if(!$('root-modal').hidden)closeInfoModal('root-modal','root-modal-close');if(!$('rule-modal').hidden)closeInfoModal('rule-modal','rule-modal-close');}});
+</script>
+</body>
+</html>
